@@ -1,0 +1,163 @@
+<%- include('../partials/head') -%>
+<%- include('../partials/nav') -%>
+    <br>
+    <br>
+    <br>
+    <div class="header_box">
+        <h1 class="codesquad_comics">CODESQUAD COMICS</h1>
+        <p>CodeSquad Comics is a collection of graphic novels read by (Name). This site is intended to display comic book covers along with information about each book, including the author, a rating, and other details about the graphic novel. Click on the cover image or the Details link to see even more information for each graphic novel including the publisher, genre, number of pages, and a brief synopsis. The About page includes meta information about this collection. Login is only available to the site administrator at this time.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="collection_box" id="main_box">
+        <h1>COMPLETE COMIC COLLECTION</h1>
+        <br>
+        <div>
+            <%for (data of data) { %>
+                <%- include('../partials/single-book', {data:data}) -%>
+            <%}%>
+        </div>
+      
+<!--Loop comics here within a partial, a for/of loop 
+ -->
+
+        <br>
+        <div>
+            <button class="editbtn_D">DISPLAY MORE</button>
+        </div>
+    </div>
+    <br>
+<%- include('../partials/footer') -%>
+<!--
+    Priority List:
+    1. Gradient
+    2. Find way to lessen space taken by boxes so that it coincides more with the mockup
+    3. Find the will to keep going through whatever circle of purgatory css resides in
+-->
+
+
+<!--
+        <br>
+        <div>
+            <a href="/" target="_blank" rel='noopener noreferrer'><img class="comic_index_logo" src="/img/watchmen.jpg" alt="Watchmen Cover"></a>
+            <p><i>Watchmen</i>
+            <br>
+            by Alan Moore
+            <br>
+            5 Stars
+            <br>
+            <a target="_blank" rel='noopener noreferrer' href="/">Details</a>
+            </p>
+        </div>
+        <div>
+            <a href="/" target="_blank" rel='noopener noreferrer'><img class="comic_index_logo" src="/img/hunter-x-hunter.jpg" alt="Hunter x Hunter Cover"></a>
+            <p><i>Hunter x Hunter</i>
+            <br>
+            by Yoshihiro Togashi
+            <br>
+            5 Stars
+            <br>
+            <a target="_blank" rel='noopener noreferrer' href="/">Details</a>    
+            </p>
+        </div>
+        <div>
+            <a href="/" target="_blank" rel='noopener noreferrer'><img class="comic_index_logo" src="/img/lumberjanes.jpg" alt="Lumberjanes Cover"></a>
+            <p><i>Lumberjanes Vol. 1</i>
+            <br>
+            by Noelle Stevenson
+            <br>
+            4 Stars
+            <br>
+            <a target="_blank" rel='noopener noreferrer' href="/">Details</a>    
+            </p>
+        </div>
+        <div>
+            <a href="/" target="_blank" rel='noopener noreferrer'><img class="comic_index_logo" src="/img/one-piece.jpg" alt="One Piece Cover"></a>
+            <p><i>One Piece, Vol. 1: Romance Dawn</i>
+            <br>
+            by Eiichiro Oda
+            <br>
+            5 Stars
+            <br>
+            <a target="_blank" rel='noopener noreferrer' href="/">Details</a>    
+            </p>
+        </div>
+        <div>
+            <a href="/" target="_blank" rel='noopener noreferrer'><img class="comic_index_logo" src="/img/wake.jpg" alt="Wake Cover"></a>
+            <p><i>Wake: The Hidden History of Women-Led Slave Revolts</i>
+            <br>
+            by Rebecca Hall
+            <br>
+            4 Stars
+            <br>
+            <a target="_blank" rel='noopener noreferrer' href="/">Details</a>    
+            </p>
+        </div>
+        <div>
+            <a href="/" target="_blank" rel='noopener noreferrer'><img class="comic_index_logo" src="/img/black-panther.jpg" alt="Black Panther Cover"></a>
+            <p><i>Black Panther: A Nation Under Our Feet Book 1</i>
+            <br>
+            by Ta-Nehisi Coates
+            <br>
+            3 Stars
+            <a target="_blank" rel='noopener noreferrer' href="/">Details</a>    
+            </p>
+        </div>
+        <div>
+            <a href="/" target="_blank" rel='noopener noreferrer'><img class="comic_index_logo" src="/img/the-walking-dead.jpg" alt="The Walking Dead Cover"></a>
+            <p><i>The Walking Dead, Vol. 1: Days Gone Bye</i>
+            <br>
+            by Robert Kirkman
+            <br>
+            4 Stars
+            <br>
+            <a target="_blank" rel='noopener noreferrer' href="/">Details</a>    
+            </p>
+        </div>
+        <div>
+            <a href="/" target="_blank" rel='noopener noreferrer'><img class="comic_index_logo" src="/img/march.jpg" alt="March Book One Cover"></a>
+            <p><i>March: Book One</i>
+            <br>
+            by John Lewis
+            <br>
+            5 Stars
+            <br>
+            <a target="_blank" rel='noopener noreferrer' href="/">Details</a>    
+            </p>
+        </div>
+        <div>
+            <a href="/" target="_blank" rel='noopener noreferrer'><img class="comic_index_logo" src="/img/batman.jpg" alt="Batman TDKR Cover"></a>
+            <p><i>Batman: The Dark Knight Returns</i>
+            <br>
+            by Frank Miller
+            <br>
+            3 Stars
+            <br>
+            <a target="_blank" rel='noopener noreferrer' href="/book">Details</a>    
+            </p>
+        </div>
+        <div>
+            <a href="/" target="_blank" rel='noopener noreferrer'><img class="comic_index_logo" src="/img/queer.jpg" alt="Queer Cover"></a>
+            <p><i>Queer: A Graphic History</i>
+            <br>
+            by Meg-John Barker
+            <br>
+            4 Stars
+            <br>
+            <a target="_blank" rel='noopener noreferrer' href="/">Details</a>    
+            </p>
+        </div>
+        <div>
+            <a href="/" target="_blank" rel='noopener noreferrer'><img class="comic_index_logo" src="/img/parable-of-the-sower.jpg" alt="Parable of the Sower Cover"></a>
+            <p><i>Parable of the Sower</i>
+            <br>
+            by Octavia E. Butler
+            <br>
+            4 Stars
+            <br>
+            <a target="_blank" rel='noopener noreferrer' href="/">Details</a>    
+            </p>
+        </div>
+
+-->

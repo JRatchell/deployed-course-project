@@ -1,0 +1,42 @@
+<%- include('../partials/head') -%>
+<%- include('../partials/nav') -%>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="login_box">
+        <h1 class="login_header">LOGIN</h1>
+        <br>
+        <form action = '/admin' method = "POST">
+            <!--Action may change to /admin-->
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username" minlength="5" required/>
+            </div>
+            <br>
+            <div>
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password" placeholder="Password" minlength="10" required/>
+            </div>
+            <br>
+            <div>
+                <input type="submit" class="editbtn_D">
+                <a href="/admin-console" role="button" type="submit">Submit</a>
+            </div>
+            <div>
+                <button>
+                    <a href="/auth/google" role="button"></a>
+                </button>
+            </div>           
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+<%- include('../partials/footer') -%>
+
+<!--
+    Priority List:
+    Essentially the same as the create comic page, still need to figure out how stop the issue of the box itself taking so much space
+    (Also yes the gradient bit is still an issue, don't think I didn't forget)
+-->

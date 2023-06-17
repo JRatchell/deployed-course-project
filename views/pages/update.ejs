@@ -1,0 +1,95 @@
+<%- include('../partials/head') -%>
+<%- include('../partials/nav') -%>
+<br>
+<div class="update_box">
+    <h1 class="update_header">UPDATE COMIC</h1>
+    <form action="/books/<%= foundBook._id %>?_method=PUT" method="POST" class="form_css" enctype="application/x-www-form-url-encoded">
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" placeholder="<%= foundBook.title%>" required/>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" placeholder="<%=foundBook.author%>" required/>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="publisher">Publisher:</label>
+            <select name="publisher" id="publisher">
+                <option value="<%= foundBook.publisher%>" disabled selected hidden><%=foundBook.publisher%></option>
+                <option value="boombox">BOOM! Box</option>
+                <option value="dc">DC Comics</option>
+                <option value="hna">Harry N. Abrams</option>
+                <option value="icon">Icon Books</option>
+                <option value="ic">Image Comics</option>
+                <option value="marvel">Marvel</option>
+                <option value="s&s">Simon and Schuster</option>
+                <option value="tsp">Top Shelf Productions</option>
+                <option value="viz">VIZ Media LLC</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" placeholder="<%=foundBook.genre%>">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="pages"># of pages:</label>
+            <input type="text" id="pages" name="pages" placeholder="<%=foundBook.pages%>">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="rating">Rating</label>
+            <input type="number" id="rating" name="rating" min="0" max="5" placeholder="number (0-5)">
+            <select name="rating" id="rating">
+                <option value="<%=foundBook.rating%>" disabled selected hidden><%=foundBook.rating%></option>
+                <option value="no stars">0</option>
+                <option value="1/2 star">0.5</option>
+                <option value="1 star">1</option>
+                <option value="1.5 stars">1.5</option>
+                <option value="2 stars">2</option>
+                <option value="2.5 stars">2.5</option>
+                <option value="3 stars">3</option>
+                <option value="3.5 stars">3.5</option>
+                <option value="4 stars">4</option>
+                <option value="4.5 stars">4.5</option>
+                <option value="5 stars">5</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="synopsis">Synopsis</label>
+            <input type="text" id="synopsis" name="synopsis"> <%=foundBook.synopsis%></input>
+        </div>
+
+        <br>
+
+        <input type="submit" id="submission" name="submission" class="editbtn_D">
+    </form>
+</div>
+<br>
+<br>
+
+<%- include('../partials/footer') -%>
+
+<!--
+    Priority List:
+    1. Gradients
+    2. Entries showing up in an even column instead of being variable lengths (a problem across all the pages with forms in them -_- )
+    3. Do you think the feds would use a poorly formatted webpage as an interoggation method, but only if they knew the suspect was a CS major?
+
+-->

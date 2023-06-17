@@ -1,0 +1,90 @@
+<%- include('../partials/head') -%>
+<title>Admin Console</title>
+<%- include('../partials/nav') -%>
+<div>
+    <a href="./admin-console/create-book">
+        <button>
+            ADD NEW COMIC
+        </button>
+    </a>
+</div>
+<!--And this is the part where you get jumpscared by a mildly unpleasant gradient-->
+<table class="admin_table" id="admin">
+   <!-- Not displaying within the border for some reason? just ask for help, it's really not that hard to and yet you still make a fuss about it.
+    <h2>ADMIN PAGE</h2>
+    <button class="add_new_comic">ADD NEW COMIC</button>
+    <br>
+    <br>
+    -->
+    <tr>
+        <th>COMIC TITLE</th>
+        <th>EDIT</th>
+        <th>DELETE</th>
+    </tr>
+    <tr>
+        <td>Batman: The Dark Knight Rises</td>
+        <td><button class="editbtn">EDIT</button></td>
+        <td><button class="editbtn_D">DELETE</button></td>
+    </tr>
+    <tr>
+        <td>Black Panther: A Nation Under Our Feet Book 1</td>
+        <td><button class="editbtn">EDIT</button></td>
+        <td><button class="editbtn_D">DELETE</button></td>
+    </tr>
+    <tr>
+        <td>Fun Home: A Family Tragicomic</td>
+        <td><button class="editbtn">EDIT</button></td>
+        <td><button class="editbtn_D">DELETE</button></td>
+    </tr>
+    <tr>
+        <td>Hunter X Hunter Vol. 1</td>
+        <td><button class="editbtn">EDIT</button></td>
+        <td><button class="editbtn_D">DELETE</button></td>
+    </tr>
+    <tr>
+        <td>Lumberjanes Vol. 1</td>
+        <td><button class="editbtn">EDIT</button></td>
+        <td><button class="editbtn_D">DELETE</button></td>
+    </tr>
+    <tr>
+        <td>March: Book 1</td>
+        <td><button class="editbtn">EDIT</button></td>
+        <td><button class="editbtn_D">DELETE</button></td>
+    </tr>
+    <tr>
+        <td>One Piece, Vol 1: Romance Dawn</td>
+        <td><button class="editbtn">EDIT</button></td>
+        <td><button class="editbtn_D">DELETE</button></td>
+    </tr>
+    <tr>
+        <td>Parable of the Sower</td>
+        <td><button class="editbtn">EDIT</button></td>
+        <td><button class="editbtn_D">DELETE</button></td>
+    </tr>
+    <tr>
+        <td>Queer: A Graphic History</td>
+        <td><button class="editbtn">EDIT</button></td>
+        <td><button class="editbtn_D">DELETE</button></td>
+    </tr>
+    <tr>
+        <td>The Walking Dead, Vol 1: Days Gone Bye</td>
+        <td><button class="editbtn">EDIT</button></td>
+        <td><button class="editbtn_D">DELETE</button></td>
+    </tr>
+    <tr>
+        <td>Wake: The Hidden Story of Women-Led Slave Revolts</td>
+        <td><button class="editbtn">EDIT</button></td>
+        <td><button class="editbtn_D">DELETE</button></td>
+    </tr>
+    <tr>
+        <td>Watchmen</td>
+        <td><button class="editbtn">EDIT</button></td>
+        <td><button class="editbtn_D">DELETE</button></td>
+    </tr>
+    
+</table>
+<br>
+<div>
+    <a href="/logout" role="button" type="submit">Submit</a>
+</div>
+<%- include('../partials/footer') -%>

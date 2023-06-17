@@ -1,0 +1,237 @@
+/* prevents side scrolling*/
+
+body {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/*Locks footer to the bottom of the page*/
+
+footer {
+    bottom: 0px;
+    min-height: 40%;
+}
+
+/*Changes size of footer logo*/
+
+.compact-size {
+    width: 40%;
+    height: 40%;
+}
+
+/*Colors header and footer background + text*/
+
+.blue_bg {
+    background-color: #063C5E;
+    color: #FFFFFF;
+}
+
+/*Locks header to top of page*/
+
+header {
+    top: 0px;
+    width: 100%;
+    min-height: 40%;
+}
+
+/*changes size of header logo*/
+
+.header_size {
+    width: 40%;
+    height: 40%;
+    justify-content:center;
+}
+
+.comic_card_image {
+    width: 400px;
+    border-radius: 25px;
+    border: 4px solid #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comic_card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    border: 4px solid #FCCF14;
+    background-color: #063C5E;
+}
+
+.comic_index_logo {
+    width: 200px;
+}
+
+.footer_logo {
+    width: 150px;
+}
+
+.comic_card_description {
+    text-align: center;
+    border-radius: 25px;
+    border: 4px solid #FCCF14;
+    background-color: #FFFFFF;
+}
+
+
+
+.descriptor_color {
+    color: #006B6B ;
+}
+
+.about_page_text_container {
+    background-color: #FFFFFF;
+    border: 4px solid #063C5E;
+}
+
+.headline_color {
+    color:#063C5E ;
+}
+
+.header_navi {
+    display: inline-block;
+    padding: 20px;
+}
+
+.admin_table{
+    border: 4px solid #063C5E;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 32px;
+    
+}
+
+.editbtn {
+   color: #FFFFFF; 
+   background-color: #063C5E;
+   padding: 1px 10px;
+}
+
+.editbtn_D {
+    color: #009E9E;
+    background-color: #FCCF14;
+    padding: 1px 10px;
+}
+
+.add_new_comic {
+    color: #009E9E;
+}
+
+.card_header {
+    color: #FCCF14;
+    display: flex;
+    justify-content: center;
+}
+
+.create_comic_box {
+    border: 4px solid #063C5E;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 32px;
+}
+
+.create_new_comic {
+    color: #063C5E;
+}
+
+.form_css{
+    justify-content: center;
+    
+}
+
+.collection_box{
+    border: 4px solid #063C5E;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.header_box{
+    border: 4px solid #063C5E;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.codesquad_comics{
+    color: #063C5E;
+}
+
+.login_header{
+    color: #063C5E;
+}
+
+
+.login_box{
+    border: 4px solid #063C5E;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.update_header{
+    color: #063C5E;
+}
+
+.update_box{
+    border: 4px solid #063C5E;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Divs that affect link colors in the footer*/
+
+div#link-colors-footer a:link { color: #FFFFFF; }
+div#link-colors-footer a:visited { color: #FFFFFF; }
+div#link-colors-footer a:hover { color: #FFFFFF; }
+div#link-colors-footer a:active { color: #FFFFFF; }
+
+/*Divs that affect link colors in the header*/
+div#link-colors-header a:link { color: #FFFFFF; }
+div#link-colors-header a:visited { color: #FFFFFF; }
+div#link-colors-header a:hover { color: #FFFFFF; }
+div#link-colors-header a:active { color: #FFFFFF; }
+
+
+/*Divs that affect comic card colors*/
+
+
+/*Divs that affect nav bar buttons*/
+
+
+/*Divs that affect the admin table*/
+table#admin tr:nth-child(odd) {
+    background-color: #DDDDDD;
+}
+table#admin th {
+    text-align: center;
+}
+
+
+
+/**/
+div#main_box h1 {
+    color: #063C5E;
+}
