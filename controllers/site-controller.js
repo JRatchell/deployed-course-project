@@ -85,7 +85,7 @@ google_redirect_get: [
     passport.authenticate('google', {failureRedirect: '/login'}),
     function(request, response) {
         // Successful authentication, redirect home.
-        res.redirect('/admin');
+        response.redirect('/admin');
 
     }
 ],
